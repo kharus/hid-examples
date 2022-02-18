@@ -25,16 +25,16 @@ extra-deps:
   - splitmix-0.1.0.3
   - blaze-colonnade-1.2.2.1
   - colonnade-1.2.0.2
-    #- Chart-diagrams-1.9.3
-    #- SVGFonts-1.7.0.1
-    #- diagrams-core-1.4.2
-    #- diagrams-lib-1.4.3
-    #- diagrams-postscript-1.5
-    #- diagrams-svg-1.4.3
+  - Chart-diagrams-1.9.3
+  - SVGFonts-1.7.0.1
+  - diagrams-core-1.5.0
+  - diagrams-lib-1.4.5.1
+  - diagrams-postscript-1.5.1
+  - diagrams-svg-1.4.3
   - svg-builder-0.1.1
   - active-0.2.0.14
-  - dual-tree-0.2.2.1
-  - monoid-extras-0.5.1
+  - dual-tree-0.2.3.0
+  - monoid-extras-0.6.1
   - statestack-0.3
   - fast-builder-0.1.2.1
   - postgresql-syntax-0.3.0.3
