@@ -14,4 +14,4 @@ newtype MyApp a = MyApp {
                 MonadReader WebAPIAuth)
 
 runMyApp :: MyApp a -> WebAPIAuth -> IO a
-runMyApp app config = runReaderT (runApp app) config
+runMyApp app = runReaderT (runApp app)

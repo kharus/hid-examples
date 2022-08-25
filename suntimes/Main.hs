@@ -1,4 +1,4 @@
-{-# LANGUAGE GeneralizedNewtypeDeriving  #-}
+module Main where
 
 import Options.Applicative as Opt
 import Data.Aeson

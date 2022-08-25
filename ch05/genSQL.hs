@@ -25,13 +25,13 @@ genSQL txt = T.concat <$> traverse processLine (zip [1..] $ T.lines txt)
 testData :: Text
 testData = "Pen:Bob\nGlass:Mary:10\nPencil:Alice\nBook:Bob\nBottle"
 
-testGenSQL :: IO ()
-testGenSQL = do
-  let (sql, errors) = runWriter (genSQL testData)
+testGenSQL :: Text -> IO ()
+testGenSQL rawSql = do
+  let (sql, errors) = runWriter (genSQL rawSql)
   TIO.putStrLn "SQL:"
   TIO.putStr sql
   TIO.putStrLn "Errors:"
   traverse_ print errors
 
 main :: IO ()
-main = testGenSQL
+main = testGenSQL testData
